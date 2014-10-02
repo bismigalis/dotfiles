@@ -6,3 +6,5 @@ alias gd='git diff'
 alias go='git checkout '
 alias gk='gitk --all&'
 alias gx='gitx --all'
+
+alias emacs='emacs -nw'
