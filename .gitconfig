@@ -1,17 +1,22 @@
 [user]
-	email = bismigalis@gmail.com
-	name = bismigalis
+name = <name>
+email = <email>
+
+[push]
+default = simple
+
+[branch]
+autosetuprebase = always
 
 [alias]
-  pu = !"git fetch origin -v; git fetch upstream -v; git merge upstream/master"
-  co = checkout
-  ci = commit
-  st = status
-  br = branch
-  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-  type = cat-file -t
-  dump = cat-file -p
-[push]
-	default = simple
+pu = !"git fetch origin -v; git fetch upstream -v; git merge upstream/master"
+co = checkout
+ci = commit
+st = status
+br = branch
+hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+type = cat-file -t
+dump = cat-file -p
+
 [core]
-	editor = /usr/bin/emacs -nw
+excludesfile = /home/user/.gitignore
